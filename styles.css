@@ -1,0 +1,87 @@
+body {
+  background-color: rgb(178, 248, 178);
+}
+#name {
+  text-shadow: 3px 3px 5px rgb(123, 123, 123);
+}
+img {
+  box-shadow: 10px 5px 5px rgb(71, 69, 69);
+  height: 250px;
+  border-radius: 30px;
+  transition: height 3s, border-radius 5s;
+}
+img:hover {
+  height: 300px;
+  border-radius: 400px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-evenly;
+ 
+}
+.title {
+  text-shadow: 1px 1px 2px rgb(105, 193, 83);
+  font-size: 20pt;
+  text-align: center;
+  font-style: oblique;
+  transition: color 2s;
+}
+.title:hover{
+  color:rgb(222, 104, 104);
+}
+nav {
+  background-color: antiquewhite;
+  border-bottom: 20px double rgb(222, 104, 104);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 10px 5px 5px rgb(71, 69, 69);
+}
+#name{
+  font-size: 25pt;
+  font-style: bold;
+}
+h2 {
+  width: 150px;
+  background-color: antiquewhite;
+  text-align: center;
+  margin-top: 20px;
+  border: 20px double rgb(222, 104, 104);
+  border-radius: 40px;
+  padding: 20px;
+  box-shadow: 10px 5px 5px rgb(94, 92, 92);
+
+}
+p {
+  background-color: antiquewhite;
+  text-align: center;
+  margin: 50px;
+  border: 20px double rgb(222, 104, 104);
+  border-radius: 40px;
+  padding: 20px;
+}
+.inactive {
+  text-decoration: none;
+  pointer-events: none;
+
+}
+.links {
+  padding: 20px;
+  text-align: right;
+  margin-top: 40px;
+}
+
+footer {
+  box-shadow: 10px 5px 5px rgb(119, 119, 119);
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: antiquewhite;
+  border-top: 20px double rgb(222, 104, 104);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
