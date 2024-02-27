@@ -5,7 +5,7 @@ body {
   text-shadow: 10px 10px 20px rgb(123, 123, 123);
 }
 img {
-  justify-content: space-evenly;
+  justify-content: space-between;
   box-shadow: 10px 5px 5px rgb(71, 69, 69);
   margin: 27px;
   height: 250px;
@@ -17,10 +17,12 @@ img:hover {
   border-radius: 400px;
 }
 .normal-img {
-  height:fit-content;
+  display: inline-block;
+  justify-content: space-between;
   box-shadow: 10px 5px 5px rgb(71, 69, 69);
-  margin: 20px;
-  height: 250px;
+  margin-left: 10px;
+  margin-right: auto;
+  height: 150px;
   border-radius: 30px;
   pointer-events: none;
 }
@@ -41,6 +43,9 @@ img:hover {
   color:rgb(222, 104, 104);
 }
 nav {
+  margin: 0;
+  padding: 0;
+  height: 12vh;
   background-color: antiquewhite;
   border-bottom: 20px double rgb(222, 104, 104);
   border-bottom-left-radius: 40px;
@@ -84,6 +89,8 @@ p {
 }
 
 footer {
+  text-align: center;
+  color:bisque;
   box-shadow: 10px 5px 5px rgb(119, 119, 119);
   position: sticky;
   bottom: 0;
