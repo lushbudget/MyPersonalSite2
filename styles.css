@@ -1,24 +1,36 @@
 body {
-  background-color: rgb(178, 248, 178);
+  font-family: "Merriweather", serif;
+  background-image: linear-gradient(
+    rgb(203, 255, 204) 10%,
+    rgb(250, 252, 235) 80%);
 }
 #name {
   text-shadow: 10px 10px 20px rgb(123, 123, 123);
 }
 img {
-  justify-content: space-between;
   box-shadow: 10px 5px 5px rgb(71, 69, 69);
   margin: 27px;
-  height: 250px;
+  height: 15em;
   border-radius: 20px;
-  transition: height 3s, border-radius 5s;
+  transition: height 3s, border-radius 5s, box-shadow 5s;
 }
+
 img:hover {
-  height: 300px;
+  box-shadow: 10px 5px 5px rgb(199, 58, 218);
+  height: 17em;
   border-radius: 400px;
 }
+
+.imgContainer {
+  display: grid;
+  width: 100%;
+  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
 .normal-img {
-  display: inline-block;
-  justify-content: space-between;
+  /* display: inline-block;
+  justify-content: space-between; */
   box-shadow: 10px 5px 5px rgb(71, 69, 69);
   margin-left: 10px;
   margin-right: auto;
@@ -28,9 +40,11 @@ img:hover {
 }
 
 .image-container {
+  padding: 1in;
   display: flex;
-  justify-content: space-evenly;
- 
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .title {
   text-shadow: 1px 1px 2px rgb(105, 193, 83);
@@ -46,10 +60,11 @@ nav {
   margin: 0;
   padding: 0;
   height: 12vh;
-  background-color: antiquewhite;
+  background-image: linear-gradient(
+  rgb(203, 255, 204) 0%,
+  rgb(250, 252, 235) 65%);
   border-bottom: 20px double rgb(222, 104, 104);
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
+  border-radius: 40px;
   display: flex;
   justify-content: space-around;
   box-shadow: 10px 5px 5px rgb(71, 69, 69);
@@ -112,7 +127,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 1000px;
+  width: 1000px; 
   background-color: rgb(182, 230, 214);
 }
 .divider {
@@ -122,10 +137,24 @@ footer {
   margin: 50px;
   border: 10px double rgb(222, 104, 104);
   border-radius: 40px;
-  /* padding: 20px; */
+  padding: 20px;
 }
 h3 {
   text-align: center;
 }
 
+#lastImageArea {
+  display: flex;
+  justify-content: center;
+}
+
+#lastImage {
+  height: 50em;
+  transition: all 5s;
+}
+
+.bigForm {
+  height: 25%;
+  width: 50%;
+}
 
