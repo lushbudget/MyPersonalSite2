@@ -5,9 +5,28 @@ body {
     rgb(203, 255, 204) 80%);
 }
 
+.photo {
+  display: flex;
+  justify-content: center;
+}
+
 #name {
   text-shadow: 10px 10px 20px rgb(123, 123, 123);
+  position: relative;
+  animation: myMove 5s;
 }
+
+@keyframes myMove {
+  0%   {top: 0px; right: 300px; color: antiquewhite;}
+  10%  {top: 0px; right: 250px; color: rgb(204, 204, 204);}
+  20%  {top: 0px; right: 200px; color: antiquewhite;}
+  50%  {top: 0px; right: 150px; color: rgb(163, 163, 163);}
+  60% {top: 0px; right: 100px; color: rgb(130, 125, 118);}
+  80% {top: 0px; right: 50px; color: rgb(85, 42, 42);}
+  100% {top: 0px; right: 0px; color: black}
+ 
+}
+
 img {
   box-shadow: 10px 5px 5px rgb(71, 69, 69);
   margin: 27px;
@@ -27,7 +46,6 @@ img:hover {
   display: grid;
   column-gap: 1em;
   width: 100%;
-  padding: 20px;
   grid-template-columns: repeat(3, 1fr);
   
 }
@@ -180,14 +198,22 @@ h3 {
 @media screen and (max-width: 768px) {
   .imgContainer {
     display: column;
-    justify-content: space-around;
+    justify-content: center;
     column-gap: 1em;
     width: 100%;
     padding: 20px;
     grid-template-columns: repeat(1, 1fr);
     transition: 60ms;
   }
+
+  .photo {
+    display: column;
+    justify-content: center;
+  }
+
   p {
+    display: flex;
+    justify-content: center;
     background-color: antiquewhite;
     font-size: smaller;
     width: 50%;
